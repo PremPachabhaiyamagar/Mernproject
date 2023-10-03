@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  {{>header}}
+</head>
+<body>
+{{>navbar}}
+    {{!-- registration section starts --}}
+    <div class="container-fluid mt-5 contact-style register" >
+      <div class="row">
+         <div class="col-md-6 col-12 mx-auto">
+           <h1 class="text-center main-heading">Register Here</h1>
+            <h1 class="text-center sub-heading">get ready to get into in admin pannel.</h1>
+            <form action="/register" method="POST" class="d-grid">
+            <div class="row register-form">
+            <div class="col-md-6">
+              <div class="form-group" autocomplete="off">
+                <label for="namefield" class="form-label">First name</label>
+                <input type="text" class="form-control" id="namefield" aria-describedby="emailHelp" name="firstname" placeholder="enter your firstname" autocomplete="off">
+              </div>
+               <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="enter Your email" autocomplete="off">
+                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+               <div class="form-group">
+                 <label for="example1" class="form-label">phone</label>
+                <input type="number" class="form-control" id="example1" name="phonenumber" placeholder="Enter Your PhoneNumber" autocomplete="off">
+              </div>
+            <div class="form-group">
+               <label for="example1" class="form-label">password</label>
+              <input type="password" class="form-control" id="example1" name="password" placeholder="please enter your password" autocomplete="off">
+            </div>
+            </div>
+            <div class="col-md-6">
+               <div class="form-group">
+                <label for="namefield" class="form-label">last name</label>
+                <input type="text" class="form-control" id="namefield"  name="lastname" placeholder="enter your lastname" autocomplete="off">
+              </div>
+            <div class="form-group">
+               <label for="example1" class="form-label">age</label>
+              <input type="number" class="form-control" id="example1" name="age" placeholder="Enter Your age" autocomplete="off">
+            </div>
+            <div class="form-group mt-4">
+               <label for="example1" class="form-label">confirm password</label>
+              <input type="password" class="form-control" id="example1" name="cpassword" placeholder="Please confirm Your password" autocomplete="off">
+            </div>
+            </div>
+             <button type="submit" class="btn btn-primary btn-style mt-5 p2 fs-4">Submit</button>
+            </div>
+          </form>
+         </div>
+      </div>
+    </div>
+    {{!-- registration section ends --}}
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>

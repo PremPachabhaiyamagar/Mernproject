@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poiret One', cursive;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4,h5{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.row{
+    margin: 0;
+}
+li,p,a{
+    font-size: 1.6rem;
+}
+/* navbar starts */
+.logo{
+    font-size: 2.25rem;
+    font-weight: bold;
+    display: initial;
+    text-shadow: 3px 2px 5px rgb(0,0,0,.1);
+}
+.navbar-light .navbar-nav .nav-link{
+    font-size: 1.9rem;
+    padding-left: 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+}
+/* navbar style ends */
+.hero-text h1{
+    font-size: 4.5rem;
+    line-height: 1.5;
+    text-shadow: 3px 4px 6px rgb(0,0,0,.1);
+    letter-spacing: .125rem;
+}
+.hero-text h1:nth-child(2){
+    font-weight: bold;
+}
+.hero-text,
+.our-services,
+label{
+    font-size: 1.7rem;
+    letter-spacing: .2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+}
+.hero-text p span{
+    font-weight: bold;
+    color: #000;
+}
+.about-style .main-heading,
+.service-style .main-heading,
+.contact-style .main-heading {
+  font-size: 5rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.about-style .sub-heading,
+.service-style .sub-heading,
+.contact-style .sub-heading {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  line-height: 2;
+  color: #333;
+  font-weight: 500;
+}
+.box {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+    
+  /* contact us starts here  */
+  label {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+  
+  .form-control {
+    padding: 1.5rem 1rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  
+  #emailHelp,
+  ::placeholder {
+    font-size: 1.5rem;
+  }
+  
+  ::placeholder {
+    font-weight: 600;
+  }
