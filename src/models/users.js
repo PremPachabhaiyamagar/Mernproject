@@ -19,7 +19,7 @@ const employeeSchema = new mongoose.Schema({
         validator : function(v){
           return validator.isEmail(v);
         },
-        message : " User already Exists"
+        message : "User already Exists"
       }
     },
     phonenumber :{
@@ -65,11 +65,11 @@ employeeSchema.methods.generateAuthToken = async function (){
  }
 }
 
-employeeSchema.pre("save" ,async function(next){
+employeeSchema.pre( "save", async function(next){
  if(this.isModified("password")){
   // hasing the password using bcrypt 
    this.password = await bcrypt.hash(this.password,10);
-   this.cpassword = undefined;
+   this.cpassword = undefined ;
  }
  next();
 })
